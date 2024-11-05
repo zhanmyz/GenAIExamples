@@ -54,7 +54,7 @@ on:
         default: true
         description: "inject commit to docker images true or false"
         required: false
-        type: string
+        type: boolean
 
 permissions: read-all
 jobs:
