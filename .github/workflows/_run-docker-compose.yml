@@ -95,7 +95,7 @@ jobs:
       matrix:
         test_case: ${{ fromJSON(needs.get-test-case.outputs.test_cases) }}
       fail-fast: false
-    runs-on: ${{ inputs.hardware }}
+    runs-on: gaudi3
     continue-on-error: true
     steps:
       - name: Clean up Working Directory
